@@ -1,0 +1,156 @@
+.header{
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+   
+
+    .header_search{
+        height: 80%;
+        width: 35%;
+        background-color: #fff;
+        display: flex;
+       margin-left: 50%;
+       transform: translate(-50%);
+       align-items: center;
+       justify-content: center;
+       border-radius: 5px;
+       input{
+        width: 80%;
+        border: none;
+        &:focus-visible{
+            outline-style: none;
+            }  
+        }
+        .icon{
+            height: 25px;
+            cursor: pointer;
+            width: 25px;
+        }
+    }
+    .contact_header{
+        height: 80%;
+        width: 5%;
+        background-color: rgb(182, 178, 178,0.5);
+        margin-left: -4%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        span{
+            margin-left: 3px;
+            margin-top: -3px;
+            a{
+                color: #fff;
+               text-decoration: none;
+            }
+            
+        }
+    }
+    .user{
+        position: relative;
+        right: -100px;
+        cursor: pointer;
+        .iconUser{
+            color: #fff;
+            width: 40px;
+            height: 40px;
+        }
+        .iconUserText{
+            height: 45px;
+            width: 45px;
+            color: #000;
+            background-color: #fff;
+            border-radius: 100%;
+            text-align: center;
+            line-height: 45px;
+            font-weight: 500;
+        }
+        .subMenu{
+            z-index: 10;
+            position: absolute;
+            display: none;
+            border-radius: 5px;
+            top: 50px;
+            left: -160px;
+            min-height: 400px;
+            width: 240px;
+            background-color: #fff;
+            border: 0.5px solid #000;
+            ul{
+                border-bottom: 0.5px solid #ccc;
+                padding-left: 20px;
+                li{
+                    list-style: none;
+                    padding: 5px 0;
+                    font-weight: 500;
+                    cursor: pointer;
+                    &:hover{
+                        color: blue;
+                    }
+                    
+                }
+                .avatar{
+                    display: flex;
+                    .icon_name{
+                        background: #000;
+                        color: #fff;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 100%;
+                        text-align: center;
+                        line-height: 50px;
+                    }
+                    .name{
+                        line-height: 50px;
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+        .active{
+            display: block;
+        }
+    }
+}
+
+.menu{
+    height: 43px;
+    background-color: #ddd;
+    .category{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        li{
+            list-style: none;
+            padding: 9px 20px;
+            box-sizing: border-box;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid #ccc;
+            .icon_home{
+                height: 25px;
+                width: 25px;
+            }
+            .icon_category{
+                height: 20px;
+                width: 20px;
+            }
+            .icon_nation, .icon_media,.icon_firm,.icon_star,.icon_cinema,.icon_tvshow{
+                height: 15px;
+                width: 15px;
+            }
+            span{
+                margin-left: 3px;
+            }
+            &:hover{
+                color: red;
+                background-color: #fff;
+            }
+        }
+    }
+}
